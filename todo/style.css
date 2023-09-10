@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(rgb(176, 196, 209) 50%, rgb(141, 223, 178) 50%);
+}
+
+.app{
+    font-family: "Poppies", sans-serif;
+    width: min(95vw, 31.25em);
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 1.875rem;
+}
+
+.container{
+    padding: 2em 2.5em;
+    background-color: azure;
+    box-shadow: 0 1rem 2em rgb(95, 104, 99);
+    border-radius: 1rem;
+}
+
+.wrapper{
+    position: relative;
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    gap: 1rem;
+}
+
+.wrapper input{
+    width: 100%;
+    background-color: transparent;
+    color: black;
+    font-size: 0.9rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(29, 28, 28);
+    padding: 0.5em 0.5em;
+}
+
+.wrapper input:focus{
+    border-color: rgb(96, 8, 238);
+}
+
+.wrapper button{
+    position: relative;
+    border-radius: 0.5em;
+    cursor: pointer;
+    background-color: rgb(7, 100, 238);
+    border: none;
+}
+#add-btn:hover{
+    background-color: rgb(78, 133, 182);
+}
+
+#error{
+    text-align: center;
+    background-color: azure;
+    color: rgb(199, 34, 34);
+    margin-top: 2rem;
+    padding: 1em 0;
+    display: none;
+    border-radius: 1rem;
+}
+
+.tasks{
+    margin-top: 1em;
+    border-radius: 0.5em;
+    width: 100%;
+    position: relative;
+    font-size: 12px;
+    padding: 1em 0.5em;
+}
+
+.delete, .edit{
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5em;
+    padding: 2px;
+}
+
+.delete{
+    background: rgb(201, 25, 25);
+}
+
+.edit{
+    background: rgb(25, 131, 201);
+}
+
+.delete:hover{
+    background: rgb(160, 77, 77);
+}
+
+.edit:hover{
+    background: rgb(101, 127, 153);
+}
+
+.taskname{
+    font-size: 15px;
+}
+
+.task{
+   align-items: center;
+   border-radius: 0.5em;
+   padding: 0.7em 1em;
+   display: grid;
+   grid-template-columns: 1fr 8fr 2fr 2fr;
+   gap: 1em;
+   border: 2px solid black;
+}
+
+.task:not(:first-child){
+    margin-top: 1em;
+}
+
+.task input[type="checkbox"]{
+    position: relative;
+    appearance: none;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    border: 2px solid rgb(3, 3, 3);
+    cursor: pointer;
+}
+
+.task input[type="checkbox"]:before{
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.task input[type="checkbox"]:checked{
+    background-color: rgb(7, 100, 238);
+    border-color: rgb(10, 10, 10);;
+    cursor: pointer;;
+}
+
+.task span{
+    font: 0.9em;
+    font-weight: 400;
+    word-break: break-all;
+}
+
+.task button{
+    color: azure;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: rgb(119, 120, 121);
+}
+
+h2{
+    margin-bottom: 30px;
+    text-align: center;
+}
