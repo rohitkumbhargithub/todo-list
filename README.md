@@ -19,3 +19,5 @@ Todo list App using HTML, CSS, JavaScript.
     - displayCount(countTask)
     - editBtn()
     - deleteBtn()
+    - taskCheck()
+            
