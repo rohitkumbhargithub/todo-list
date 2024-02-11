@@ -11,13 +11,11 @@
         <div class="container">
             <h2>Todo List</h2>
             <div class="wrapper">
-                <input type="text" placeholder="Task to be add..">
-                <button id="add-btn">Add</button>
+                <input id="myInput" type="text" placeholder="Task to be add..">
+                <button id="add-btn" onclick="addTask()">Add</button>
             </div>
             <div class="tasks">
-                <p id="pending-tasks">
-                    You have <span class="count-value">0</span> task(s) to completed.
-                </p>
+                <h4>schedule your daily task!</h4>
             </div>
         </div>
         <p id="error">
